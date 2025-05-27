@@ -20,7 +20,9 @@
     "build": "vite build",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "lint": "eslint . --max-warnings 0"
+    "lint": "eslint . --max-warnings 0",
+    "ci": "pnpm lint && pnpm test && pnpm coverage && pnpm build",
+    "publish": "pnpm publish --access public"
   },
   "keywords": [
     "zip",
@@ -69,5 +71,8 @@
   "dependencies": {
     "adm-zip": "^0.5.16",
     "jszip": "^3.10.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

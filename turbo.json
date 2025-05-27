@@ -20,6 +20,21 @@
     "latest": {
       "dependsOn": ["^latest"],
       "cache": false
+    },
+    "test": {
+      "dependsOn": ["^test"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": ["coverage/**", "test-results/**"]
+    },
+    "ci": {
+      "dependsOn": ["^ci"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": ["coverage/**", "test-results/**", "dist/**", ".next/**", ".turbo/**"]
+    },
+    "publish": {
+      "dependsOn": ["^publish"],
+      "cache": false,
+      "persistent": true
     }
   }
 }

@@ -7,14 +7,16 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
-    "latest": "turbo run latest && pnpm up --latest"
+    "latest": "turbo run latest && pnpm up --latest",
+    "test": "turbo run test",
+    "ci": "turbo run ci"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
     "turbo": "^2.5.3",
     "typescript": "5.8.3"
   },
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@10.10.0",
   "engines": {
     "node": ">=23"
   },
