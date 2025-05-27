@@ -1,6 +1,7 @@
 {
-  "extends": "@repo/typescript-config/nextjs.json",
+  "extends": "@zip/typescript-config/nextjs.json",
   "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
     "plugins": [
       {
         "name": "next"

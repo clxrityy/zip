@@ -1,0 +1,73 @@
+{
+  "name": "@clxrity/zip",
+  "version": "0.0.1",
+  "description": "A React zip utility library",
+  "private": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.es.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.es.js",
+      "default": "./dist/index.es.js"
+    }
+  },
+  "scripts": {
+    "latest": "pnpm up --latest",
+    "build": "vite build",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "keywords": [
+    "zip",
+    "react",
+    "utility",
+    "library",
+    "compression",
+    "compress",
+    "nextjs",
+    "typescript",
+    "javascript",
+    "web",
+    "frontend",
+    "npm",
+    "package",
+    "vite",
+    "upload",
+    "component"
+  ],
+  "author": {
+    "name": "MJ Anglin",
+    "email": "contact@mjanglin.com",
+    "url": "https://mjanglin.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@testing-library/react": "^16.3.0",
+    "@types/adm-zip": "^0.5.7",
+    "@types/react": "19.1.6",
+    "@vitejs/plugin-react": "^4.5.0",
+    "@vitest/coverage-v8": "^3.1.4",
+    "@zip/eslint-config": "workspace:*",
+    "@zip/typescript-config": "workspace:*",
+    "eslint": "^9.27.0",
+    "jsdom": "^26.1.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-dts": "^4.5.4",
+    "vite-plugin-wasm": "^3.4.1",
+    "vitest": "^3.1.4"
+  },
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "jszip": "^3.10.1"
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "extends": "@zip/typescript-config/react-library.json",
+    "compilerOptions": {
+        "outDir": "dist",
+        "module": "ESNext",
+        "target": "ES2020",
+        "declaration": true,
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "jsx": "react-jsx",
+        "skipLibCheck": false,
+        "sourceMap": false,
+        "resolveJsonModule": true
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "tests",
+        "coverage",
+        "scripts",
+    ]
+}

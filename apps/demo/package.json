@@ -1,10 +1,10 @@
 {
-  "name": "docs",
+  "name": "demo",
   "version": "0.1.0",
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack --port 3001",
+    "dev": "next dev --turbopack --port 3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --max-warnings 0",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@zip/ui": "workspace:*",
+    "@clxrity/zip": "workspace:*",
     "next": "^15.3.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
