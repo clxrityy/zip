@@ -1,24 +1,32 @@
 {
-  "name": "zip",
-  "private": true,
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types",
-    "latest": "turbo run latest && pnpm up --latest",
-    "test": "turbo run test",
-    "ci": "turbo run ci"
-  },
-  "devDependencies": {
-    "prettier": "^3.5.3",
-    "turbo": "^2.5.3",
-    "typescript": "5.8.3"
-  },
-  "packageManager": "pnpm@10.10.0",
-  "engines": {
-    "node": ">=23"
-  },
-  "license": "MIT"
+	"name": "zip",
+	"private": true,
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev",
+		"lint": "turbo run lint",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
+		"check-types": "turbo run check-types",
+		"latest": "turbo run latest && pnpm up --latest",
+		"test": "turbo run test",
+		"ci": "turbo run ci"
+	},
+	"devDependencies": {
+		"prettier": "^3.5.3",
+		"turbo": "^2.5.3",
+		"typescript": "5.8.3"
+	},
+	"packageManager": "pnpm@10.10.0",
+	"engines": {
+		"node": ">=23"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/clxrityy/zip.git"
+	},
+	"bugs": {
+		"url": "https://github.com/clxrityy/zip/issues"
+	},
+	"homepage": "https://github.com/clxrityy/zip#readme"
 }

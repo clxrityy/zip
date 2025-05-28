@@ -9,8 +9,8 @@
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
     "check-types": "tsc --noEmit",
-    "latest": "pnpm up --latest",
-    "ci": "pnpm lint && pnpm check-types"
+	"latest": "pnpm up --latest",
+    "ci": "npm run lint && npm run check-types"
   },
   "devDependencies": {
     "@zip/eslint-config": "workspace:*",

@@ -1,0 +1,11 @@
+**/.next
+**/dist
+**/*.md
+**/LICENSE
+**/node_modules
+**/pnpm-lock.yaml
+**/.git
+**/out
+**/coverage
+**/build
+**/.turbo

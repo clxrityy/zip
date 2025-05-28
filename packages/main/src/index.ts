@@ -1,3 +1,3 @@
-export * from "./client";
-export * from "./server";
-export * from "./components";
+export const main = () => {
+	console.log('This is the main package entry point.')
+}

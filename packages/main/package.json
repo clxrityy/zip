@@ -1,28 +1,33 @@
 {
   "name": "@clxrity/zip",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A React zip utility library",
   "private": false,
   "type": "module",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.es.js",
-  "types": "./index.d.ts",
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.es.js",
-      "default": "./dist/index.es.js"
-    }
+    "./client": {
+	  "import": "./dist/client/index.js",
+	  "types": "./dist/client/index.d.ts"
+	},
+	"./server": {
+	  "import": "./dist/server/index.js",
+	  "types": "./dist/server/index.d.ts"
+	}
   },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "packageManager": "pnpm@10.10.0",
   "scripts": {
     "latest": "pnpm up --latest",
-    "build": "vite build",
+    "build": "tsup --config tsup.config.ts",
+    "clean": "rm -rf dist && rm -rf .turbo",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "lint": "eslint . --max-warnings 0",
     "ci": "pnpm lint && pnpm test && pnpm coverage && pnpm build",
-    "publish": "pnpm publish --access public"
+    "types": "tsc --emitDeclarationOnly --declaration --project tsconfig.json"
   },
   "keywords": [
     "zip",
@@ -58,10 +63,8 @@
     "@zip/typescript-config": "workspace:*",
     "eslint": "^9.27.0",
     "jsdom": "^26.1.0",
+    "tsup": "^8.5.0",
     "typescript": "^5.8.3",
-    "vite": "^6.3.5",
-    "vite-plugin-dts": "^4.5.4",
-    "vite-plugin-wasm": "^3.4.1",
     "vitest": "^3.1.4"
   },
   "peerDependencies": {
