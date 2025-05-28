@@ -1,6 +1,6 @@
 {
   "name": "@clxrity/zip",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A React zip utility library",
   "private": false,
   "type": "module",
