@@ -62,7 +62,7 @@
     "@zip/eslint-config": "workspace:*",
     "@zip/typescript-config": "workspace:*",
     "eslint": "^9.27.0",
-    "jsdom": "^26.1.0",
+    "jsdom": "^27.0.0",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3",
     "vitest": "^3.1.4"
