@@ -28,6 +28,6 @@
     "@zip/typescript-config": "workspace:*",
     "eslint": "^9.27.0",
     "tailwindcss": "^4.1.14",
-    "typescript": "5.8.3"
+    "typescript": "5.9.3"
   }
 }
